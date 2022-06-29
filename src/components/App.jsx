@@ -15,8 +15,8 @@ function App() {
     setInputText("");
   }
 
-  function deleteItem() {
-    console.log("Item Deleted");
+  function deleteItem(id) {
+    setItems((prevItem) => prevItem.filter((item, index) => index !== id));
   }
 
   return (
